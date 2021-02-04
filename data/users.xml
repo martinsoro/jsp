@@ -61,12 +61,6 @@
         <firstname>testz</firstname>
     </user>
     <user>
-        <id>AxelKoffi</id>
-        <login>AxelKoffi</login>
-        <lastname>koffi</lastname>
-        <firstname>Axel</firstname>
-    </user>
-    <user>
         <id>AxelSoro</id>
         <login>AxelSoro</login>
         <lastname>Soro</lastname>
@@ -79,12 +73,6 @@
         <firstname>Axel</firstname>
     </user>
     <user>
-        <id>AxelKoffi</id>
-        <login>AxelKoffi</login>
-        <lastname>koffi</lastname>
-        <firstname>Axel</firstname>
-    </user>
-    <user>
         <id>AxelSoro</id>
         <login>AxelSoro</login>
         <lastname>Soro</lastname>
@@ -94,12 +82,6 @@
         <id>AxelKarimou</id>
         <login>AxelKarimou</login>
         <lastname>karimou</lastname>
-        <firstname>Axel</firstname>
-    </user>
-    <user>
-        <id>AxelKoffi</id>
-        <login>AxelKoffi</login>
-        <lastname>koffi</lastname>
         <firstname>Axel</firstname>
     </user>
     <user>
@@ -153,8 +135,8 @@
     <user>
         <id>ta</id>
         <login>ta</login>
-        <lastname>ta</lastname>
-        <firstname>ta</firstname>
+        <lastname>b</lastname>
+        <firstname>q</firstname>
     </user>
     <user>
         <id>bienbon</id>
@@ -165,8 +147,8 @@
     <user>
         <id>tr</id>
         <login>tr</login>
-        <lastname>y</lastname>
-        <firstname>j</firstname>
+        <lastname>bim</lastname>
+        <firstname>bom</firstname>
     </user>
     <user>
         <id>ttest1</id>

@@ -97,8 +97,8 @@ public class ServletUsers extends HttpServlet {
                 message = "Tout est bien !";
 
             }
-             else if (action.equals("deleteUtilisateur")) {
-                modifierUtilisateur(request);
+             else if (action.equals("supprimerParLogin")) {
+                supprimerUtilisateur(request);
                 Collection<User> liste = Server.uh.getUsers();
                 request.setAttribute("listeDesUsers", liste);
                 forwardTo = "index.jsp?action=listerLesUtilisateurs";
@@ -118,9 +118,9 @@ public class ServletUsers extends HttpServlet {
     }
     public void creerUtilisateurDeTest() {
         try {
-            User user1 = new User("Mamady20", "Mamady", "KEITA");
-            User user2 = new User("Mamady21", "Mamady", "KEITA");
-            User user3 = new User("Mamady22", "Mamady", "KEITA");
+            User user1 = new User("sdsoro", "donikan", "SORO");
+            User user2 = new User("slsoro", "louis", "SORO");
+            User user3 = new User("smsoro", "martin", "SORO");
             Server.uh.addUser(user1);
             Server.uh.addUser(user2);
             Server.uh.addUser(user3);
@@ -153,7 +153,22 @@ public class ServletUsers extends HttpServlet {
 
     }
 
-      public void modifierUtilisateur(HttpServletRequest request) throws UnsupportedEncodingException {
+      public void modifierUtilisateur(HttpServletRequest request){
+        
+          String nom, prenom , login;
+          nom = request.getParameter("nom");
+          prenom = request.getParameter("prenom");
+          login = request.getParameter("login");
+           try {
+            User user = new User(login, nom, prenom);
+            Server.uh.updateUser(user);
+            
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(ServletUsers.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }
+      
+     public void supprimerUtilisateur(HttpServletRequest request) throws UnsupportedEncodingException {
      
           String login;
           login = request.getParameter("login");

@@ -48,7 +48,7 @@
             </form>
 
             <li>Afficher les détails d'un utilisateur</li>
-            <form action="ServletUsers" method="get">
+            <form action="ServletUsers" method="post">
                 login : <input type="text" name="login"/><br>
                 <input type="hidden" name="action" value="chercherParLogin"/>
                 <input type="submit" value="Chercher" name="submit"/>
@@ -56,13 +56,21 @@
 
 
             <li>Modifier les détails d'un utilisateur :</li>
-            <form action="ServletUsers" method="get">
+            <form action="ServletUsers" method="post">
                 Login : <input type="text" name="login"/><br>
                 Nom : <input type="text" name="nom"/><br>
                 Prénom : <input type="text" name="prenom"/><br>
                 <input type="hidden" name="action" value="updateUtilisateur"/>
                 <input type="submit" value="Mettre à jour" name="submit"/>
             </form>
+            
+            <li>Supprimer un utilisateur</li>
+            <form action="ServletUsers" method="post">
+                login : <input type="text" name="login"/><br>
+                <input type="hidden" name="action" value="supprimerParLogin"/>
+                <input type="submit" value="Chercher" name="submit"/>
+            </form>
+            
         </ol>
 
         <!-- Fin du menu -->
